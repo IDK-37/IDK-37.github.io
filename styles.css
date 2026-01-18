@@ -340,7 +340,7 @@ iframe.pdf{
 
 .slide{
   flex: 0 0 auto;
-  width: min(580px, 92%);
+  width: min(350px, 92%);
   scroll-snap-align: center;
   border: 1px solid var(--border);
   border-radius: 14px;
