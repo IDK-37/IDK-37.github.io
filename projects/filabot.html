@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PROJECT TITLE | Isaiah Kol</title>
+  <title>Filabot Spool Adapter | Isaiah Kol</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -24,9 +24,9 @@
 <main class="container">
 
   <!-- TITLE -->
-  <h1>PROJECT TITLE</h1>
+  <h1>Filabot Spool Adapter</h1>
   <p class="lead">
-    One–two sentence high-level summary of the project and its purpose.
+    Designed and printed an adapter to make Bambu spools compatible with the Filabot.
   </p>
 
   <!-- HERO IMAGE -->
@@ -37,44 +37,50 @@
   >
 
   <!-- OVERVIEW -->
-  <h2>Overview</h2>
+  <h2>Overview & Problem</h2>
   <p>
-    Brief context. What this project is, why it exists, and what problem it addresses.
-    Keep this factual and technical, not story-like.
-  </p>
-
-  <!-- PROBLEM -->
-  <h2>Problem</h2>
-  <p>
-    Clearly define the engineering problem or constraint. What was not working,
-    missing, inefficient, or required improvement?
+    The UVM FabLab recently acquired a Filabot Filament Recycler, so that we can reuse the material from failed or discarded prints.
+    Since we use primarily Bambu Labs printers, we have many empty Bambu spools lying around, but unfortunately the stock attachment
+    on the spooler module is designed for their own proprietary spools. It seemed foolish to invest in a filament recycler and then buy proprietary
+    spools to use it, so I took on this project.
   </p>
 
   <!-- SOLUTION -->
   <h2>Solution</h2>
   <p>
-    Describe what you designed or built. Focus on decisions, tradeoffs,
-    and why the solution works.
+    I designed a simple alternate attachment for the spooler (removing the stock one proved only minimally invasive) to work with Bambu,
+    or really any other brand of spool with a similar internal diameter. Rather than the stock design which utilized a specific protrusion
+    which fit into their spools, I opted for a threaded cylinder with a large wing nut style retainer. Finger-tight with my design was perfectly
+    sufficient for eliminating the risk of spool slippage, and unlike the original design, there was now no risk of the spool being pulled off 
+    by the traverse mechanism and unraveling on the floor.
   </p>
 
   <!-- PROCESS -->
   <h2>Design & Process</h2>
   <p>
-    Outline your process: iteration, testing, modeling, fabrication, or analysis.
-    Bullet points are fine here.
+    When I was first presented with this problem by the Operations Manager, I immediately took several photos of the spooler unit from all
+    angles to clearly see where I would have interference to consider, and then took down basic dimensions. I then procured the .STL for the
+    stock attachment, and printed a copy on my personal printer. Between the pictures, measurements, and physical duplicate I had just made,
+    I was definetly in a good place to open up solidworks and begin drafting my own rendition. After experimenting with modifying the original
+    fitting to remove the protrusion that blocked Bambu spools, I settled on just making my own version. I kept the retaining flanges and remade
+    the center mounting design to ensure compatibility, but i replaced the tapered prongs with a threaded cylinder and large wing nut to keep the 
+    spool locked in place. Once I was happy with the design, I printed it in PETG and hooked it up to the spooler.
   </p>
 
   <!-- TOOLS -->
   <h2>Tools & Skills</h2>
   <p>
-    CAD • 3D Printing • Prototyping • Fabrication • Testing
+    CAD (SolidWorks) • 3D Printing • Prototyping • Fabrication • Testing
   </p>
 
   <!-- RESULTS -->
   <h2>Outcome</h2>
   <p>
-    What worked, what improved, and what the final result was.
-    If possible, mention performance, reliability, or usability improvements.
+    Overall, the attachment worked quite well! It fit perfectly onto the spooler unit, and when I put a Bambu spool on and set it up, I was able to
+    successfully respool some loose filament we had. However, the threads were a little sticky, so I went back and adjusted tolerances, and I also
+    increased infill from 15% to 20% as it felt like you could break it if you really tightened it as much as you could. After that, I set it
+    back up and that is still what we have running on the Filabot. In a future rendition, I would like to reprint with multiple materials.
+    I think if the first few layers of the wing nut were TPU 90A, I think it would have better grip on the spool and generally improve the design.
   </p>
 
   <!-- BACK LINK -->
