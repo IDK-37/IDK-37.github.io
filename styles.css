@@ -378,11 +378,11 @@ iframe.pdf{
 }
 /* Project thumbnails sizing */
 .project-card{
-  height: 200px;              /* target height */
+  height: 100px;              /* target height */
 }
 
 .project-card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;          /* crop, don’t stretch */
+  object-fit: contain;
+  background: #0b0d12;
+  /* crop, don’t stretch */
 }
