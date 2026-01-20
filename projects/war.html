@@ -38,7 +38,6 @@
   <div class="actions" style="margin-bottom:16px;">
     <a class="btn" href="../python/war.py" download>Download .py</a>
   </div>
-  <p id="hljs-status" class="lead">Syntax highlighting status: loading…</p>
   <pre class="codeblock"><code id="code-war" class="language-python"></code></pre>
 
 
@@ -48,30 +47,15 @@
 </main>
 
 <script>
-  window.addEventListener("DOMContentLoaded", async () => {
-    const status = document.getElementById("hljs-status");
-
-    // Load the code
+  window.addEventListener("load", async () => {
     const res = await fetch("../python/war.py", { cache: "no-store" });
     const text = await res.text();
     const el = document.getElementById("code-war");
     el.textContent = text;
-
-    // Check highlight.js
-    //if (!window.hljs) {
-      //status.textContent = "Syntax highlighting status: FAILED (highlight.js not loaded)";
-      //return;
-    //}
-
     hljs.highlightElement(el);
-
-    // Confirm it actually applied
-    //const applied = el.classList.contains("hljs");
-    //status.textContent = applied
-      //? "Syntax highlighting status: OK"
-      //: "Syntax highlighting status: FAILED (highlight.js ran but did not apply)";
   });
 </script>
+
 
 
 
