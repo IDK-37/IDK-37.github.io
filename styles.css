@@ -584,7 +584,7 @@ main.container > section.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0px; /* small tweak for vertical alignment */
+  padding-top: 6px;
   align-self: stretch;
 }
 
@@ -599,7 +599,7 @@ main.container > section.card {
   border-radius: 999px;
   background: var(--timeline-color);
   display: block;
-  margin-top: 4px; /* centers dot with first line of text */
+  margin-top: 0;
 }
 
 /* The vertical line segment that continues downward */
@@ -607,9 +607,10 @@ main.container > section.card {
   width: 2px;
   background: var(--timeline-color);
   flex: 1;
-  margin-top: 0px; /* attaches to dot nicely */
-  min-height: 25px; /* ensures a visible stem even if text is short */
+  margin-top: 6px;
+  min-height: 16px;
 }
+
 
 /* Content text */
 .timeline-content {
