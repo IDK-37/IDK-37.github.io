@@ -560,7 +560,7 @@ main.container > section.card {
   flex: 0 0 auto;
   opacity: 0.95;
   position: absolute;
-  top: 0px;
+  top: 18px;
   right: 18px;
   pointer-events: none;
 }
@@ -606,8 +606,8 @@ main.container > section.card {
   width: 2px;
   background: var(--timeline-color);
   flex: 1;
-  margin-top: 6px; /* attaches to dot nicely */
-  min-height: 18px; /* ensures a visible stem even if text is short */
+  margin-top: 0px; /* attaches to dot nicely */
+  min-height: 25px; /* ensures a visible stem even if text is short */
 }
 
 /* Content text */
