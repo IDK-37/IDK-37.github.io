@@ -537,6 +537,11 @@ pre.codeblock code{
   }
 }
 /* Header row inside the experience tile (title + right-side logo) */
+/* Make the experience tile the anchor for absolute positioning */
+main.container > section.card {
+  position: relative;
+}
+
 .exp-header {
   display: flex;
   align-items: flex-start;
@@ -554,6 +559,10 @@ pre.codeblock code{
   object-fit: contain;
   flex: 0 0 auto;
   opacity: 0.95;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  pointer-events: none;
 }
 
 /* Timeline */
