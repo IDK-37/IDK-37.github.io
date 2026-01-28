@@ -575,7 +575,7 @@ main.container > section.card {
   display: grid;
   grid-template-columns: 18px 1fr; /* gutter width + content */
   column-gap: 14px;
-  align-items: start;
+  align-items: stretch;
 }
 
 /* Gutter draws the dot and the vertical line segment */
@@ -584,7 +584,8 @@ main.container > section.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2px; /* small tweak for vertical alignment */
+  padding-top: 0px; /* small tweak for vertical alignment */
+  align-self: stretch;
 }
 
 /* Make line and dot SAME color */
@@ -612,7 +613,7 @@ main.container > section.card {
 
 /* Content text */
 .timeline-content {
-  padding-bottom: 14px; /* spacing between items */
+  padding-bottom: 0px; /* spacing between items */
 }
 
 .timeline-role {
