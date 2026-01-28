@@ -555,12 +555,12 @@ main.container > section.card {
 
 .exp-logo {
   width: 256px;
-  height: 256px;
+  height: 76px;
   object-fit: contain;
   flex: 0 0 auto;
   opacity: 0.95;
   position: absolute;
-  top: 18px;
+  top: 0px;
   right: 18px;
   pointer-events: none;
 }
