@@ -683,3 +683,14 @@ main.container > section.card {
     aspect-ratio: 4 / 3;
   }
 }
+.media-carousel .yt-slide {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.media-carousel .yt-slide iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
