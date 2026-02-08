@@ -694,3 +694,33 @@ main.container > section.card {
   display: block;
   border: 0;
 }
+/* Hide all slides by default (images, video wrappers, iframe wrappers) */
+.media-carousel .window > * {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* The active slide becomes visible */
+.media-carousel .window > *.active {
+  display: block;
+}
+
+/* YouTube slide sizing */
+.media-carousel .yt-slide {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.media-carousel .yt-slide iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Ensure controls stay on top */
+.media-carousel .controls {
+  position: relative;
+  z-index: 2;
+}
