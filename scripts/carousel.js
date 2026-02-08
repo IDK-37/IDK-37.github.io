@@ -11,11 +11,23 @@
     if (index < 0) index = 0;
 
     function stopVideo(el) {
-      if (el && el.tagName === "VIDEO") {
+      if (!el) return;
+    
+      // Local <video>
+      if (el.tagName === "VIDEO") {
         el.pause();
         el.currentTime = 0;
+        return;
+      }
+    
+      // YouTube iframe (inside wrapper)
+      const iframe = el.querySelector?.("iframe");
+      if (iframe) {
+        const src = iframe.src;
+        iframe.src = src; // resets playback
       }
     }
+
 
     function show(i) {
       // wrap
