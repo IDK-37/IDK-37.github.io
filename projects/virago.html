@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motorcycle Rebuild | Isaiah Kol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  
+<header>
+  <div class="nav">
+    <a class="brand" href="../index.html">Isaiah Kol</a>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      ☰
+    </button>
+
+    <nav id="site-nav" class="navlinks">
+      <a href="../index.html">Home</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- TITLE -->
+  <h1>1981 Yamaha Virago Rebuild</h1>
+  <p class="lead">
+    My friend and I took on the summer project of a complete motorcycle rebuild
+  </p>
+  
+<div class="media-carousel" data-carousel>
+  <div class="window">
+    <!-- Add as many as you want. First one gets class="active" -->
+    <img class="active" src="../images/virago1.jpg"/>
+    <img src="../images/virago2.jpg"/>
+    <img src="../images/virago3.jpg"/>
+    <img src="../images/virago4.jpg"/>
+    <img src="../images/virago5.jpg"/>
+    <img src="../images/virago6.jpg"/>
+    <img src="../images/virago7.jpg"/>
+    <!--<video src="../media/filabot/filabot-test.mp4" controls></video>-->
+  </div>
+
+  <div class="controls">
+    <button class="btn secondary" type="button" data-prev>← Prev</button>
+    <div class="counter" data-counter>1 / 3</div>
+    <button class="btn secondary" type="button" data-next>Next →</button>
+  </div>
+</div>  
+</div>
+
+  <p>
+    Note: This project predates this portfolio; I was doing this purely for fun without any notion that this was a relevant engineering project, so frankly my documentation is poor.
+  </p>
+  <p>
+    My friend had recently purchased a non-running Yamaha Virago. I say 1981, as that was the year of most of the parts, and the engine, an XV 920cc, matches that year. Thanks to some overdue favors at the local junkyard,
+    we were lucky enough to obtain another 1981 Virago, also non-running but for different reasons. With two completely broken bikes, we now had most of the parts to make a good bike. We selected the original bike to fix, 
+    and the junkyard one as the donor. We did this simply because the engine was larger on the original, but they were in similar enough states that we did debate.
+  </p>
+  <p>
+    In short, we found the original wiring diagrams online and entirely recreated the harness as both ones we had were heavily mouse-chewed. 
+    Then, after getting a new battery, we initially thought the starter motor was the problem. As it turned out, it was only one of the problems, but nonetheless we fully disassembled it and the engine, and replaced all
+    of the worn out gears. We discovered that part of the problem here was a flaw that Yamaha had recognised, and solved on the newer model. With a little rearanging of parts to adjust spacing, we got that part running, 
+    but quickly realized there was something wrong with the alternator. After narrowing it down to a bad stator (Figure 2), we were able to replace that, and get the alternator to function. From there, after reasemmbling 
+    the engine with some gasket-in-a-can, we performed an oil change on the 40 year old bike which proved to be more of a hassle than expected.
+  </p>
+  <p>
+    Finally, we got it running at stable RPMs, and so we took it for a test drive a mile down the road towards the gas station. When we got there, the bike died. We had spent most of our summer after work fixing these 
+    larger issues with this bike, I simply assumed that there must be some significant problem. So, we pushed the ~600lb bike a mile up the entirely uphill road back to the garage, just to discover that it was simply 
+    out of gas, which would have been useful to figure out when the bike had died at the gas station. 
+  <p>
+    Overall, this was an incredibly rewarding experience. I learned a lot about smaller combustion engines like the V-Twin, I gained a lot of experience with electrical repair, and with the later anecdote, 
+    I learned that sometimes the solution to a given problem is not the most complex one, but rather the simpler one literally right in front of you.
+  </p>
+  <!-- BACK LINK -->
+  <p style="margin-top:40px;">
+    ← <a href="../projects.html">Back to Projects</a>
+  </p>
+
+</main>
+<script>
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.navlinks');
+
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+</script>
+<script src="../scripts/carousel.js"></script>
+</body>
+</html>
